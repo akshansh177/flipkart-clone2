@@ -10,11 +10,11 @@ function Navbar({provider}) {
   return (
     <div className='bg-[#2973F0] text-white text-base py-3 px-6 flex flex-row space-x-8 font-semibold justify-center items-center '>
        <div className='text-2xl italic hover:cursor-pointer'>Flipkart</div>
-       <label class="relative text-gray-400 focus-within:text-gray-600 block w-4/12 ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 absolute pl-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+       <label className="relative text-gray-400 focus-within:text-gray-600 block w-4/12 ">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 absolute pl-2 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                 <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
             </svg>
-            <input type="search" name="Search"  placeholder="Search for products,brands and more" class=" text-sm shadow-lg border border-gray-800/30 rounded-sm py-4 px-4 bg-white placeholder-gray-400 text-gray-700 appearance-none h-8 w-full block pl-8 focus:outline-none" />
+            <input type="search" name="Search"  placeholder="Search for products,brands and more" className=" text-sm shadow-lg border border-gray-800/30 rounded-sm py-4 px-4 bg-white placeholder-gray-400 text-gray-700 appearance-none h-8 w-full block pl-8 focus:outline-none" />
         </label>
         
         {/* {Object.values(providers).map((provider) => ( */}

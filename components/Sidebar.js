@@ -34,7 +34,7 @@ function Sidebar() {
                         
                     </Disclosure.Button>
                     <Disclosure.Panel className=" flex flex-col space-y-1 pl-8 pt-2 text-sm text-gray-700">
-                        <ul>{sideList.map(sideList =><a className='flex flex-col' href='https://google.com'>{sideList}</a>)}</ul>
+                        <ul>{sideList.map(sideList =><a className='flex flex-col' key={sideList} href='https://google.com'>{sideList}</a>)}</ul>
                         <ul><a href='https://google.com' className='text-blue-700'>Show +1 more</a></ul>
         
                     </Disclosure.Panel>
@@ -70,7 +70,7 @@ function Sidebar() {
                             </Box>
         
                         
-                        <ul>{brandList.map(brandList =><ul className='flex items-center' href='https://google.com'><Checkbox size='small'/>{brandList}</ul>)} </ul>
+                        <ul>{brandList.map(brandList =><ul className='flex items-center' key={brandList}href='https://google.com'><Checkbox size='small'/>{brandList}</ul>)} </ul>
                         <ul><a href='https://google.com' className='text-blue-700'>Show +1234 more</a></ul>
                     </Disclosure.Panel>
                     </>

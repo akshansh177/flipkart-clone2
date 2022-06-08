@@ -7,7 +7,7 @@ export default function ProductCard({id,title,category,price,image,description,r
   return (
     <div className= ' flex flex-col space-y-1  p-2 hover:shadow-lg cursor-pointer'>
         <FavoriteIcon className='text-gray-500 text-sm font-light justify-end items-end'/>
-        <Image src={image} height={240} width={80} objectFit='contain'/>
+        <Image src={image} height={240} width={80} objectFit='contain' alt='ProductImage'/>
         <div className='text-sm'>{title}</div>
         <div className='text-gray-500 text-xs'>{category}</div>
         <div className='flex flex-row items-center'>

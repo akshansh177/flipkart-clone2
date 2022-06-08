@@ -18,7 +18,7 @@ export default function ProductPage({products}) {
         </div>
         <div className='p-1 pl-3 text-sm flex flex-row space-x-2'>
           <div className='font-semibold'>Sort By</div>
-          <ul>{SortingList.map(SortingList =><a className='px-3 space-x-4 hover:text-blue-500 hover:underline hover:underline-offset-4' href='https://google.com'>{SortingList}</a>)}</ul>
+          <ul>{SortingList.map(SortingList =><a className='px-3 space-x-4 hover:text-blue-500 hover:underline hover:underline-offset-4' key={SortingList} href='https://google.com'>{SortingList}</a>)}</ul>
         </div>
         <Divider />
          <div className='grid grid-cols-4 grid-rows-3 p-5 space-x-4'>
