@@ -5,7 +5,7 @@ exports.id = 854;
 exports.ids = [854];
 exports.modules = {
 
-/***/ 9042:
+/***/ 223:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -22,6 +22,8 @@ var external_next_auth_default = /*#__PURE__*/__webpack_require__.n(external_nex
 ;// CONCATENATED MODULE: external "next-auth/providers/google"
 const google_namespaceObject = require("next-auth/providers/google");
 var google_default = /*#__PURE__*/__webpack_require__.n(google_namespaceObject);
+;// CONCATENATED MODULE: external "@next-auth/mongodb-adapter"
+const mongodb_adapter_namespaceObject = require("@next-auth/mongodb-adapter");
 ;// CONCATENATED MODULE: external "mongodb"
 const external_mongodb_namespaceObject = require("mongodb");
 ;// CONCATENATED MODULE: ./lib/mongodb.js
@@ -46,7 +48,6 @@ if (false) {} else {
 /* harmony default export */ const mongodb = (clientPromise);
 
 ;// CONCATENATED MODULE: ./pages/api/[...nextauth].js
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '@next-auth/mongodb-adapter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 
@@ -59,7 +60,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
         }), 
     ],
     secret: process.env.JWT_SECRET,
-    adapter: Object(function webpackMissingModule() { var e = new Error("Cannot find module '@next-auth/mongodb-adapter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(mongodb),
+    adapter: (0,mongodb_adapter_namespaceObject.MongoDBAdapter)(mongodb),
     pages: {
         signIn: "/home"
     },
@@ -79,7 +80,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(9042));
+var __webpack_exports__ = (__webpack_exec__(223));
 module.exports = __webpack_exports__;
 
 })();
