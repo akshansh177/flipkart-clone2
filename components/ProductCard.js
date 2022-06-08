@@ -16,7 +16,7 @@ export default function ProductCard({id,title,category,price,image,description,r
             <StarIcon className='text-xs' />
           </div>
           <div className='px-1 text-xs text-gray-400'>({rating && rating.count})</div>
-          <Image src="/fp-assured.png" width={50} height={15}/>
+          <Image src="/fp-assured.png" width={50} height={15} alt='assured'/>
         </div>
         <div><Currency quantity={price} currency="INR" /></div>
         <div className='text-xs'>free delivery</div>

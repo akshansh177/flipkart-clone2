@@ -22,10 +22,9 @@ export default function ProductPage({products}) {
         </div>
         <Divider />
          <div className='grid grid-cols-4 grid-rows-3 p-5 space-x-4'>
-                {products.map(({id,title,category,price,image,description,rating,rate,count}) => (
+                {products.map(({id,title,category,price,image,description,rating}) => (
                 <ProductCard
                   key={id}
-                  id={id}
                   title={title}
                   description={description}
                   image={image}

@@ -1,5 +1,4 @@
 
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/solid'
 import Image from 'next/image';
@@ -48,7 +47,7 @@ function Sidebar() {
         
         <div className='px-3 pt-3 pl-3 flex space-x-5 items-center'>
           <Checkbox size='small'/>
-          <Image src="/fp-assured.png" width={70} height={20}/>              
+          <Image src="/fp-assured.png" width={70} height={20} alt='assured'/>              
         </div>
         <div className='text-sm pl-5 p-2'>
             <div className='flex flex-col'>
